@@ -1,0 +1,15 @@
+name: Saludo en pull request a develop
+
+on:
+  pull_request_target:
+    branches:
+      - develop
+
+jobs:
+  saludo:
+    name: Imprimir saludo
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Saludo
+        run: echo "Hola mundo"
